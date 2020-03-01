@@ -1,7 +1,467 @@
- 
-<html>
-<header><title>FILA 2020</title></header>
-<body>
-Welcome to our upcoming website.
-</body>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>FILA 2020</title>
+
+    <style type="text/css">
+    .skip {
+        position: absolute;
+        top: -1000px;
+        left: -1000px;
+        height: 1px;
+        width: 1px;
+        text-align: left;
+        overflow: hidden;
+    }
+    
+    a.skip:active, 
+    a.skip:focus, 
+    a.skip:hover {
+        left: 0; 
+        top: 0;
+        width: auto; 
+        height: auto; 
+        overflow: visible; 
+    }
+    </style>
+  
+    <style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: separate;
+        border-spacing: 5px;
+    }
+    th, td {
+        padding: 5px;
+    }
+    </style>
+    
+    <style type="text/css">
+    <!--
+    .tab { margin-left: 40px; }
+    -->
+    </style>
+
+    <!-- Bootstrap core CSS -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+<a href="#content" class="skip">Skip to content</a>
+<div id="content">
+
+    <nav class="navbar navbar-inverse navbar-custom navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">ParLearning 2019</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <!--li class="active"><a href="#">Home</a></li-->
+            <!-- <li><a href="#program">Program</a></li> -->
+            <li><a href="#call">Call for Papers</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#dates">Important Dates</a></li>
+            <li><a href="#guidelines">Paper Guidelines</a></li>
+            <!--li><a href="#special">Special Issue</a></li-->
+            <li><a href="#keynote">Keynote Speakers</a></li>
+            <li><a href="#organization">Organization</a></li>
+            <!--li><a href="#past">Past Workshops</a></li-->
+          </ul>
+          
+          <!--ul class="nav navbar-nav navbar-right">
+            <li><a href="https://twitter.com/search?q=%23parlearning"><img style="height:40px; margin-top:-10px; margin-bottom:-10px;" src="data:image/jpeg;base64,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" alt="Twitter logo"></a></li-->
+            <!-- <li><a href="https://twitter.com/search?q=%23parlearning"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+<div class="text-center">
+  <br>
+  <br>
+  <br>
+      <h2>The 8th International Workshop on Parallel and Distributed
+      Computing for Large-Scale Machine Learning and Big Data Analytics (ParLearning 2019)</h2>
+        <p>August 5, 2019<br>
+        Anchorage, Alaska, USA</p>
+  <p><b>In conjunction with the <a href="https://www.kdd.org/kdd2019/" target="_blank">25th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD 2019)</a></b><br>
+August 4-8, 2019<br>
+Dena’ina Convention Center and William Egan Convention Center<br>
+Anchorage, Alaska, USA<br>
+<a href="https://www.kdd.org/kdd2019/"><img src="https://kdd.org/images/article/kdd2019_116_40.gif" alt="KDD 2019 logo"></a></p>
+</div>
+</div>
+
+<!-- 
+<p style="color:red">
+<b>Paper submission deadline extended by one week to January 20, 2017 AoE</b>
+</p>
+-->
+
+<!-- 
+<div>
+  <h4>Best Paper Award</h4>
+A Best Paper Award with a prize of $300 and certificate will be presented at the workshop. The award is sponsored by Huawei Technologies Co. Ltd.
+<br>
+<img src="http://www.huawei.com/ucmf/groups/public/documents/webasset/hw_000353.jpg">
+</div>
+
+
+<div>
+  <h4>Best Paper Award</h4>
+The Best Paper Award goes to Azalia Mirhoseini, Bita Rouhani, Ebrahim Songhori, and Farinaz Koushanfar for their paper <i>ExtDict: Extensible Dictionaries for Data- and Platform-Aware Large-Scale Learning</i>. Congratulations!
+<p>
+</div>
+-->
+
+<!-- 
+      <div id="program">
+        <h4>Advance Program</h4>
+      
+
+<table  class="table" style="width:100%">
+  <tr>
+    <th>Time</th>
+    <th>Title</th>
+    <th>Authors/Speaker</th>
+  </tr>
+  <tr>
+    <td>8:15-8:30am</td>
+    <td colspan=2><i>Opening remarks</i></td>
+  </tr>
+  <tr>
+    <td>8:30-9:30am</td>
+    <td><a href="#keynote1">Invited Talk 1: Scaling Deep Learning Algorithms on Extreme Scale Architectures</a></td>
+    <td><a href="#keynote1">Abhinav Vishnu</a>, Principal member of technical staff, AMD, USA</td>
+  </tr>
+  <tr>
+    <td>9:30-10:00am</td>
+    <td colspan=2><i>Break</i></td>
+  </tr>
+  <tr>
+    <td>10:00-10:30am</td>
+    <td>Near-Optimal Straggler Mitigation for Distributed Gradient Methods (ParLearning-01)</td>
+    <td>Songze Li, Seyed Mohammadreza Mousavi Kalan, A. Salman Avestimehr and Mahdi Soltanolkotabi</td>
+  </tr>
+  <tr>
+    <td>10:30-11:00am</td>
+    <td>Streaming Tiles: Flexible Implementation of Convolution Neural Networks Inference on Manycore Architectures (ParLearning-02)</td>
+    <td>Nesma Rezk, Madhura Purnaprajna and Zain Ul-Abdin</td>
+  </tr>
+  <tr>
+    <td>11:00-12:0pm</td>
+    <td><a href="#keynote2">Invited Talk 2: Model Parallelism optimization with deep reinforcement learning</a></td>
+    <td><a href="#keynote2">Azalia Mirhoseini</a>, Google Brain, USA</td>
+  </tr>
+  <tr>
+    <td>12:00-1:30pm</td>
+    <td colspan=2><i>Lunch</i></td>
+  </tr>
+    <tr>
+    <td>1:30-2:30pm</td>
+    <td><a href="#keynote3">Invited Talk 3: Introduction to Snap Machine Learning</a></td>
+    <td><a href="#keynote3">Thomas Parnell</a>, IBM Research – Zurich, Switzerland</td>
+  </tr>
+  <tr>
+    <td>2:30-3:00pm</td>
+    <td>Parallel Huge Matrix Multiplication on a Cluster with GPGPU Accelerators (ParLearning-03)</td>
+    <td>Seungyo Ryu and Dongseung Kim</td>
+  </tr>
+  <tr>
+    <td>3:00-3:30pm</td>
+    <td colspan=2><i>Break</i></td>
+  </tr>
+    <tr>
+    <td>3:30-4:00pm</td>
+    <td><a href="#keynote4">Invited Talk 4: Matrix Factorization on GPUs: A Tale of Two Algorithms</a></td>
+    <td><a href="#keynote4">Wei Tan</a>, Citadel LLC, USA</td>
+  </tr>
+  <tr>
+    <td>4:00-4:30pm</td>
+    <td>A Study of Clustering Techniques and Hierarchical Matrix Formats for Kernel Ridge Regression (ParLearning-04)</td>
+    <td>Elizaveta Rebrova, Gustavo Chávez, Yang Liu, Pieter Ghysels and Xiaoye Sherry Li</td>
+  </tr>
+  <tr>
+    <td>4:30-5:00pm</td>
+    <td><i>Panel Discussion</i></td>
+    <td>Azalia Mirhoseini, Thomas Parnell, Wei Tan</td>
+  </tr>
+  </table>    
+
+-->
+
+<!-- 
+      <div id="keynote1">
+        <h4>Invited talk 1</h4>
+      </div>
+<p>
+<b>Abhinav Vishnu</b>, Principal member of technical staff, AMD, USA
+</p>
+<p><b>Scaling Deep Learning Algorithms on Extreme Scale Architectures</b></p>
+<p><b>Abstract:</b> 
+Deep Learning (DL) is ubiquitous. Yet leveraging distributed memory systems for DL algorithms is incredibly hard. In this talk, we will present approaches to bridge this critical gap.  We will start by scaling DL algorithms on large scale systems such as leadership class facilities (LCFs). Specifically, we will: 1) present our TensorFlow and Keras runtime extensions which require negligible changes in user-code for scaling DL implementations, 2) present communication-reducing/avoiding techniques for scaling DL implementations, 3) present  approaches on fault tolerant DL implementations, and 4) present research on semi-automatic pruning of DNN topologies. We will provide pointers and discussion on the general availability of our research under the umbrella of Machine Learning Toolkit on Extreme Scale (MaTEx) available at <a href="http://github.com/matex-org/matex">http://github.com/matex-org/matex</a></p>
+<p><b>Bio:</b>  
+Abhinav Vishnu is a Principal Member of Technical Staff at AMD Research. He focuses on designing extreme scale Deep Learning algorithms that are capable of execution on supercomputers and cloud computing systems.  The specific objectives are to design user-transparent distributed TensorFlow;  novel communication reducing/approximation techniques for DL algorithms; fault tolerant Deep Learning/Machine Learning algorithms; multi-dimensional deep neural networks and applications of these techniques on several domains.  His research is publicly available as Machine Learning Toolkit for Extreme Scale (MaTEx) at <a href="http://github.com/matex-org/matex">http://github.com/matex-org/matex</a></p>
+
+      <div id="keynote2">
+        <h4>Invited talk 2</h4>
+      </div>
+<p>
+<b>Azalia Mirhoseini</b>, Google Brain, USA
+</p>
+<p><b>Model Parallelism optimization with deep reinforcement learning</b></p>
+<p><b>Abstract:</b>  
+The past few years have witnessed a growth in size and computational requirements for training and inference with neural networks. Currently, a common approach to address these requirements is to use a heterogeneous distributed environment with a mixture of hardware devices such as CPUs and GPUs. Importantly, the decision of placing parts of the neural models on devices is often made by human experts based on simple heuristics and intuitions. In this talk, I will present some of our recent efforts on learning to optimize model parallelism for TensorFlow computational graphs. Key to our method is the use of deep reinforcement learning to predict which subsets of operations in a TensorFlow graph should run on which of the available devices. The execution time of the predicted placements is then used as the reward signal to optimize the parameters of the deep model. Our main result is that on important computer vision, language modeling and neural machine translation tasks, our model finds non-trivial ways to parallelise the model that outperform hand-crafted heuristics and traditional algorithmic methods.</p>
+<p><b>Bio:</b>  
+Azalia Mirhoseini is a Research Scientist at Google Brain where she focuses on machine learning approaches to solve problems in computer systems and metalearning. Before Google, she was a Ph.D. student in Electrical and Computer Engineering at Rice University. Her work has been published at several conference and journal venues, including ICML, ICLR, DAC, ICCAD, SIGMETRICS, IEEE TNNLS, and ACM TRETS. She has received a number of awards, including the Best Ph.D. Thesis Award at Rice, fellowships from IBM Research, Microsoft Research, Schlumberger, and a Gold Medal in the National Math Olympiad in Iran. </p>
+
+
+      <div id="keynote3">
+        <h4>Invited talk 3</h4>
+      </div>
+<p>
+<b>Thomas Parnell</b>, IBM Research – Zurich, Switzerland
+</p>
+<p><b>Introduction to Snap Machine Learning</b></p>
+<p><b>Abstract:</b>  Generalized linear models, such as logistic regression and support vector machines, remain some of the most widely-used techniques in the machine learning field. Their enduring popularity can be attributed to their desirable theoretical properties, effective training algorithms, and relative ease of interpretability. In this talk we will introduce Snap Machine Learning: a new library for fast training of such models, that is designed to enable new real-time and large-scale applications. The library was designed from the ground up with performance in mind. It exploits parallelism at three different levels: across multiple machines in a network, across heterogeneous compute nodes within a machine (e.g. CPU and GPU), as well as the massive parallelism offered by modern GPUs. In this talk we will review this new architecture and give examples of how the library can be used via the various APIs that are provided (e.g. Python, Apache Spark, MPI). Finally, we will present benchmarking results using the publicly available Terabyte Click Logs dataset (from Criteo Labs) and show that Snap Machine Learning can train a logistic regression classifier in 1.53 minutes, 46x faster than any of the results that have been previously reported using the same dataset.</p>
+
+<p><b>Bio:</b>
+Thomas received his B.Sc. and Ph.D. degrees in mathematics from the University of Warwick. U.K., in 2006 and 2011, respectively. He joined Arithmatica, Warwick, U.K., in 2005, where he was involved in FPGA design and electronic design automation. In 2007, he co-founded Siglead Europe, a U.K.-limited subsidiary of Yokohama-based Siglead Inc., where he was involved in developing signal processing and error-correction algorithms for HDD, flash, and emerging storage technologies. In 2013, he joined IBM Research in Zürich, Switzerland, where he is actively involved in the research and development of machine learning, compression and error-correction algorithms for IBM’s storage and AI products. His research interests include signal processing, information theory, machine learning and recommender systems.</p>
+
+
+      <div id="keynote4">
+        <h4>Invited talk 4</h4>
+      </div>
+<p>
+<b>Wei Tan</b>, Senior Research Engineer, Citadel LLC
+</p>
+<p><b>Matrix Factorization on GPUs: A Tale of Two Algorithms</b></p>
+
+<p><b>Abstract:</b> Matrix factorization (MF) is an approach to derive latent features from observations. It is at the heart of many algorithms, e.g., collaborative filtering, word embedding and link prediction. Alternating least Square (ALS) and stochastic gradient descent (SGD) are the two popular methods in solving MF. SGD converges fast, while ALS is easy to parallelize and able to deal with non-sparse ratings. In this talk, I will introduce cuMF(https://github.com/cuMF/), a CUDA-based matrix factorization library that accelerates both ALS and SGD to solve very large-scale MF. cuMF uses a set of techniques to maximize the performance on single and multiple GPUs. These techniques include smart access of sparse data leveraging memory hierarchy, using data parallelism with model parallelism, approximate algorithms and storage. With only a single machine with up to four Nvidia GPU cards, cuMF can be 10 times as fast, and 100 times as cost-efficient, compared with the state-of-art distributed CPU solutions. In this talk I will also share lessons learned in accelerating compute- and memory-intensive kernels on GPUs.</p>
+
+<p><b>Bio:</b> Dr. WEI TAN is Senior Research Engineer at Citadel LLC. Before joining Citadel he was a Research Staff Member at IBM T.J. Watson Research Center. Wei has a wide range of research interests in distributed computing, machine learning, and GPU computing. Specifically, he worked on GPU accelerated platform for large-scale machine learning. He developed cuMF, by far the fastest matrix factorization library on GPUs. His work has been incorporated into IBM patent portfolio and software products such as Spark, BigInsights and Cognos. He received the IEEE Peter Chen Big Data Young Researcher Award (2016), IBM Outstanding Technical Achievement Award (2017, 2016, 2014), Best Paper Award at IEEE SCC (2017, 2011) and ACM/IEEE ccGrid (2015), Best Student Paper Award at IEEE ICWS (2014), Pacesetter Award from Argonne National Laboratory (2010), and caBIG Teamwork Award from the National Institute of Health (2008). He held adjunct professor positions at Tsinghua University and Tianjin University. For more information, please visit <a href="http://wei-tan.github.io/">http://wei-tan.github.io/</a>.</p>
+
+-->
+
+<div id="program">
+<h4>Program (August 5, 2019)</h4>
+</div>
+
+8am - 8:05am: Introduction to ParLearning 2019
+<br><b>8:05am - 9am: Keynote talk 1: Accelerating Deep Learning with Tensor Processing Units - Dr. Lifeng Nai (Google Research, Mountain View, CA, USA)</b>
+      <br><p class="tab"><i>Abstract</i>: Google's Tensor Processing Unit (TPU), first deployed in 2015, provides services today for more than one billion people and provides more than an order of magnitude improvement in performance and performance/Watt compared to contemporary platforms. Inspired by the success of the first TPU for neural network inference, Google has developed multiple generations of machine learning supercomputers for neural network training that allow near linear scaling of ML workloads running on TPUv2 and TPUv3. In this talk, we will present how TPU works as a machine learning supercomputer to benefit a growing number of Google services. We will have a deep dive into TPU’s system & chip architecture and our hardware/software codesign methodology that turns accelerator concepts into reality.
+          </p>
+<br>9am - 9:30am: Regular paper 1: Large Scale Cloud Deployment of Spectral Topic Modeling
+<br>9:30am - 10am: Coffee break
+<br><b>10am - 10:45am: Keynote talk 2: Bots, Socks and Vandals: Malicious Actors in Online Forums - Professor V.S. Subrahmanian (Dartmouth College, Hanover, NH, USA)</b>
+<br><p class="tab"><i>Abstract</i>: Malicious actors are omnipresent in online social and crowdsourced platforms – vandals on Wikipedia, bots on Twitter, and trolls on various platforms all play a major role in degrading the quality of open information and free discussion on the web.This talk will focus on the role of semantics and its relationship with networks in order to classify users on Twitter as bots and users on Wikipedia as vandals. In the context of Twitter bots, this talk will discuss the DARPA Twitter Bot Challenge and subsequent research. In the context of Wikipedia, Professor will also discuss the vandal early warning system (VEWS) and its role in identifying vandals as early as possible. Time permitting, this talk will discuss malicious actors in other online networks such as Slashdot and/or on e-commerce sites such as Flipkart. The talk reflects joint work with many students and colleagues.
+      </p>
+      <br><b>10:45am - 11:30am: Keynote talk 3: HW-SW Codesign for AI at Facebook - Dr. Satish Nadathur (Facebook Research, Menlo Park, CA, USA)</b>
+      <br><p class="tab"><i>Abstract</i>: In this talk, we will describe the principles of HW-SW codesign at Facebook. We will go over key characteristics of deep learning workloads from a HPC perspective – in terms of how limited they are by compute and memory bandwidth. Based on our growing application needs, we need specialized ASIC solutions to keep up with the workload scale. We will describe the overall building blocks of the Facebook-designed hardware released to the Open Compute Project (OCP) that efficiently helps us deploy hardware at scale. We will end by sketching some of the key SW challenges in order to best leverage these systems.
+      </p>
+<br>11:30am - 12pm: Regular paper 2: Expedite Neural Network Training via Software Techniques
+<br>12pm - 12:30pm: Regular paper 3: Scaling up Stochastic Gradient Descent for Non-convex Optimisation
+
+<div id="call">
+<h4>Call for Papers</h4>
+</div>
+      
+<p>
+Scaling up machine-learning (ML), data mining (DM) and reasoning algorithms from Artificial Intelligence (AI) for massive datasets is a major technical challenge in the time of &quot;Big Data&quot;. The past ten years have seen the rise of multi-core and GPU based computing. In parallel and distributed computing, several frameworks such as OpenMP, OpenCL, and Spark continue to facilitate scaling up ML/DM/AI algorithms using higher levels of abstraction. We invite novel works that advance the trio-fields of ML/DM/AI through development of scalable algorithms or computing frameworks. 
+Ideal submissions should describe methods for scaling up <i>X</i> using <i>Y</i> on <i>Z</i>, where potential choices for <i>X</i>, <i>Y</i> and <i>Z</i> are provided below.
+</p>
+<p>Scaling up</p>
+
+<ul>
+    <li>Recommender systems</li>
+    <li>Optimization algorithms (gradient descent, Newton methods)</li>
+    <li>Deep learning</li>
+    <li>Distributed algorithms and AI for Blockchain</li>
+    <li>Sampling/sketching techniques</li>
+    <li>Clustering (agglomerative techniques, graph clustering, clustering heterogeneous data)</li>
+    <li>Probabilistic inference (Bayesian networks)</li>
+    <li>Graph algorithms, graph mining and knowledge graphs</li>
+    <li>Graph neural networks</li>
+    <li>Autoencoders and variational autoencoders</li>
+    <li>Generative adversarial networks</li>
+    <li>Generative models</li>
+    <li>Deep reinforcement learning</li>
+</ul>
+
+<p>Using</p>
+<ul>
+    <li>Parallel architectures/frameworks (OpenMP, CUDA etc.)</li>
+    <li>Distributed systems/frameworks (MPI, Spark, etc.)</li>
+    <li>Machine learning frameworks (TensorFlow, PyTorch etc.)</li>
+</ul>
+
+<p>On</p>
+<ul>
+    <li>Various infrastructures, such as cloud, commodity clusters, GPUs, and emerging AI chips.</li>
+</ul>
+
+<!-- <p>
+Proceedings of the Parlearning workshop will be distributed at the conference and will be submitted for inclusion in the IEEE Xplore Digital Library after the conference.
+</p> -->
+<!-- 
+<a href="PARLEARNING2018.pdf">PDF Flyer</a>
+-->
+
+<!-- -------------------------------------------------------------------------------------------------------- 
+      <div id="awards">
+        <h4>Journal publication</h4>
+        
+Selected papers from the workshop will be published in a Special Issue of <a href="http://www.journals.elsevier.com/future-generation-computer-systems/">Future Generation Computer Systems</a>, Elsevier's International Journal of eScience. Special Issue papers will undergo additional review.
+      </div>
+-->
+
+
+<!-- -------------------------------------------------------------------------------------------------------- -->
+      <div id="awards">
+        <h4>Awards</h4>
+      </div>
+<p><b>Best Paper Award:</b> The program committee will nominate a paper for the Best Paper award. In <a href="http://parlearning.ecs.fullerton.edu/parlearning2018.html">past years</a>, the Best Paper award included a cash prize. Stay tuned for this year!
+<p><b>Travel Awards:</b> Students with accepted papers will get a chance to apply for a travel award. Please find details on the <a href="https://www.kdd.org/kdd2019/">ACM KDD 2019</a> website.      
+
+<!-- -------------------------------------------------------------------------------------------------------- -->
+
+      <div id="dates">
+        <h4>Important Dates</h4>
+      </div>
+
+<ul>
+    <li>Paper submission: May 12, 2019 (Anywhere on Earth)</li>
+    <li>Author notification: June 1, 2019</li>
+    <li>Camera-ready version: Jun 8, 2019</li>
+</ul>
+
+<!-- -------------------------------------------------------------------------------------------------------- -->
+      <div id="guidelines">
+        <h4>Paper Guidelines</h4>
+      </div>
+<p>
+  All submissions are limited to a total of 6 pages, including all content and references, and must be in PDF format and formatted according to the new Standard ACM Conference Proceedings Template. Additional information about formatting and style files is available online as the <a href="https://www.acm.org/publications/proceedings-template" target="_blank">ACM Master Article Template</a>.
+
+Papers that do not meet the formatting requirements will be rejected without review.</p>
+
+<p>All submissions must be uploaded electronically at 
+  <a href="https://www.easychair.org/conferences/?conf=parlearning2019" target="_blank">EasyChair</a>.</p>
+
+      <div id="special">
+        <h4>Special Issue</h4>
+      </div>
+<p>
+We are planning to publish a special issue of a journal, consisting of the best papers of ParLearning 2019. We are about to publish a special issue of the Springer journal Future Generation Computer Systems, containing the selected papers of ParLearning 2017.</p>
+
+
+<!-- -------------------------------------------------------------------------------------------------------- -->
+      <div id="keynote">
+        <h4>Keynote Speakers</h4>
+      </div>
+      <ul>
+      <li><a href="http://home.cs.dartmouth.edu/~vs/" target="_blank">Professor V.S. Subrahmanian</a> (Dartmouth College, Hanover, NH, USA)</li>
+      <li><a href="http://nailifeng.org/" target="_blank">Dr. Lifeng Nai</a> (Google, Mountain View, CA, USA)</li>
+      <li><a href="https://www.linkedin.com/in/nrsatish/" target="_blank">Dr. Satish Nadathur </a> (Facebook Infrastructure, Menlo Park, CA, USA)</li>
+      </ul>
+  
+      <div id="organization">
+        <h4>Organization</h4>
+      </div>
+      <p>
+      <ul>
+      <li>General Chairs: <a href="http://www.cse.iitd.ac.in/~arindamp/" target="_blank">Arindam Pal</a> (TCS Research and Innovation, Kolkata, India) and <a href="https://www.cs.vu.nl/~bal/" target="_blank">Henri Bal</a> (Vrije Universiteit, Amsterdam, Netherlands)</li>
+      <li>Program Chairs: <a href="http://azaliamirhoseini.com/" target="_blank">Azalia Mirhoseini</a> (Google AI, Mountain View, CA, USA) and <a href="https://researcher.watson.ibm.com/researcher/view.php?person=zurich-TPA" target="_blank">Thomas Parnell</a> (IBM Research, Zurich, Switzerland)</li>
+      <li>Publicity Chair: <a href="http://ecs.fullerton.edu/~anandvp/" target="_blank">Anand Panangadan</a> (California State University, Fullerton, CA, USA)</li>
+      <li>Steering Committee Chairs: <a href="https://sutanay.github.io/" target="_blank">Sutanay Choudhury</a> (Pacific Northwest National Laboratory, Richland, WA, USA) and <a href="https://sites.google.com/site/yinglongxia/" target="_blank">Yinglong Xia</a> (Facebook AI, Menlo Park, CA, USA)</li>
+      </ul>
+      </p>
+
+<!--      
+      <div>
+        <h4>Technical Program Committee</h4>
+      </div>
+      <p>
+      <ul>
+      <li>Vito Giovanni Castellana, Pacific Northwest National Laboratory, USA
+      <li>Tanmoy Chakraborty, IIIT Delhi, India
+      <li>Sutanay Choudhury, Pacific Northwest National Laboratory, USA
+      <li>Erich Elsen, Google Brain, USA
+      <li>Dinesh Garg, IIT Gandhinagar and IBM Research, India
+      <li>Kripabandhu Ghosh, IIT Kanpur, India
+      <li>Saptarshi Ghosh, IIT Kharagpur, India
+      <li>Kazuaki Ishizaki, IBM Research - Tokyo, Japan
+      <li>Debnath Mukherjee, TCS Research, India
+      <li>Francesco Parisi, University of Calabria, Italy
+      <li>Saurabh Paul, PayPal, USA
+      <li>Jianting Zhang, City College of New York, USA
+      </ul>
+      </p>
+
+-->
+
+<div id="past">
+<h4>Past Workshops</h4>
+</div>
+  The first 7 editions of ParLearning were organized in conjunction with the International Parallel and Distributed Processing Symposium (IPDPS).
+  The details of the past workshops can be found on the old website of <a href="http://parlearning.ecs.fullerton.edu" target="_blank">ParLearning</a>. From 2019, the organizers have decided to conduct it with KDD.
+<p>  
+<ul>
+<li><a href="http://parlearning.ecs.fullerton.edu/parlearning2018.html" target="_blank">ParLearning 2018</a>
+<li><a href="http://parlearning.ecs.fullerton.edu/parlearning2017.html" target="_blank">ParLearning 2017</a>
+<li><a href="http://parlearning.ecs.fullerton.edu/parlearning2016.html" target="_blank">ParLearning 2016</a>
+<li><a href="http://parlearning.usc.edu/" target="_blank">ParLearning 2015</a>
+<li><a href="https://edas.info/web/parlearning2014/" target="_blank">ParLearning 2014</a>
+<li><a href="https://dblp.org/db/conf/ipps/ipdps2013w.html" target="_blank">ParLearning 2013</a>
+<!-- <li><a href="http://cass-mt.pnnl.gov/parlearning.aspx">2013</a> -->
+<li><a href="http://researcher.watson.ibm.com/researcher/view_group.php?id=2591" target="_blank">ParLearning 2012</a>
+</ul>
+
+
+    </div><!-- /.container -->
+
+
+
+
+
+  </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- <script src="../../dist/js/bootstrap.min.js"></script> -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>
